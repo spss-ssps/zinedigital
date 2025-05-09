@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Body as Textile</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #ffffff;
+            /* background: rgb(0, 66, 111, 40); */
+        }
+
+        .zine-viewer {
+            display: flex;
+            overflow-x: auto;
+            height: 100vh;
+            scroll-snap-type: x mandatory;
+        }
+
+        .zine-page {
+            flex: 0 0 auto;
+            height: 100%;
+            scroll-snap-align: start;
+        }
+
+        .zine-page img {
+            height: 100%;
+            display: block;
+        }
+
+        ::-webkit-scrollbar {
+            height: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #ccc;
+            border-radius: 5px;
+        }
+
+        @media (max-width: 600px) {
+            .zine-page img {
+                width: 100vw;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="zine-viewer">
+        <div class="zine-page"><img src="src/zine digital-01.jpg" alt="Page 1" /></div>
+        <div class="zine-page"><img src="src/zine digital-02.jpg" alt="Page 1" /></div>
+        <div class="zine-page"><img src="src/zine digital-03.jpg" alt="Page 1" /></div>
+        <div class="zine-page"><img src="src/zine digital-04.jpg" alt="Page 1" /></div>
+        <div class="zine-page"><img src="src/zine digital-05.jpg" alt="Page 1" /></div>
+        <div class="zine-page"><img src="src/zine digital-06.jpg" alt="Page 1" /></div>
+        <div class="zine-page"><img src="src/zine digital-07.jpg" alt="Page 1" /></div>
+        <div class="zine-page"><img src="src/zine digital-08.jpg" alt="Page 1" /></div>
+    </div>
+</body>
+
+</html>
