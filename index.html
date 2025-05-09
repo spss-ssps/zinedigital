@@ -41,12 +41,17 @@
         }
 
         @media (max-width: 600px) {
+            .zine-viewer {
+                overflow-y: hidden;
+            }
+
             .zine-page img {
                 width: 100vw;
                 height: auto;
                 position: relative;
                 top: 50%;
                 transform: translateY(-50%);
+                object-fit: contain;
             }
         }
     </style>
